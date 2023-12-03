@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 import boto3
-
+pip install boto3
 # Function to load the model from AWS S3
 def load_model_from_s3(bucket_name, model_key):
     s3 = boto3.client('s3')

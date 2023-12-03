@@ -4,15 +4,18 @@ import pickle
 import boto3
 
 # Function to load the model from AWS S3
+aws_access_key_id = 'AKIAQDWKCAWVJRO7VVUG'
+aws_secret_access_key = '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'
+s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
+
 def load_model_from_s3(bucket_name, model_key):
-    s3 = boto3.client('s3')
     response = s3.get_object(Bucket=bucket_name, Key=model_key)
     model = pickle.loads(response['Body'].read())
     return model
 
 # AWS S3 configuration
 aws_bucket_name = 'mlalgodeploy'
-model_key = 'voting_classifier_models3://mlalgodeploy/voting_classifier_model.pkl'
+model_key = 'voting_classifier_model.pkl'
 
 # Load the model from AWS S3
 loaded_model = load_model_from_s3(aws_bucket_name, model_key)

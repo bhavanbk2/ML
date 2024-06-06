@@ -1,23 +1,23 @@
 # Machine Learning-Driven Network Security: IoT DDoS Attack Detection
 - Description: 
--IoT enables easy access to cloud services but faces severe DDoS threats. 
--DDoS attacks disrupt IoT services by flooding networks with compromised devices.
--Motivation :
--IoT Expansion & Vulnerability:IoT expansion requires robust security against evolving DDoS threats
--Critical Data Security:With sensitive data at stake, ML ensures data integrity and user trust.
--Evolving DDoS Threats:Traditional measures fall short, necessitating adaptive machine learning for dynamic threat detection.
+- IoT enables easy access to cloud services but faces severe DDoS threats. 
+- DDoS attacks disrupt IoT services by flooding networks with compromised devices.
+- Motivation :
+- IoT Expansion & Vulnerability:IoT expansion requires robust security against evolving DDoS threats
+- Critical Data Security:With sensitive data at stake, ML ensures data integrity and user trust.
+- Evolving DDoS Threats:Traditional measures fall short, necessitating adaptive machine learning for dynamic threat detection.
 
--Data is retrieved from different file formats as follows: 
--• README.md - contains info about captures and associated malwares.
--• .pcap - original file that has network traffic captures 
--• conn.log.labeled - .pcap file is retrieved using Zeek network analyser with proper labelling along with some additional info
+- Data is retrieved from different file formats as follows: 
+- • README.md - contains info about captures and associated malwares.
+- • .pcap - original file that has network traffic captures 
+- • conn.log.labeled - .pcap file is retrieved using Zeek network analyser with proper labelling along with some additional info
 
 -AposematIoT-23 
--• A unique dataset capturing IoT network traffic. 
--• 20 malware captures on IoT devices and 3 benign IoT devices. 
--• Real network behaviour for research and machine learning. 
--• Labels provided for analysis, including attack, C&C, DDoS, and more. 
--• A valuable resource for IoT security and malware research.
+- • A unique dataset capturing IoT network traffic. 
+- • 20 malware captures on IoT devices and 3 benign IoT devices. 
+- • Real network behaviour for research and machine learning. 
+- • Labels provided for analysis, including attack, C&C, DDoS, and more. 
+- • A valuable resource for IoT security and malware research.
 
 # Description of Files
 

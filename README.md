@@ -1,17 +1,23 @@
-# IoT Lab Capture
+# Machine Learning-Driven Network Security: IoT DDoS Attack Detection
 - Description: 
-- Probable Malware Name: Linux.Mirai
-- MD5: c76a2520b7454788d127b7e41ae3d9be
-- SHA1: 66883e8b7d2e34d9da2bdd48a6e28b5a01ccf93d
-- SHA256: fdb74bae02106a08e1afa9ac408b8d97521f9414bbb6af874f6574a75656dfc8
-- Password of zip file: infected
-- Duration: 
+IoT enables easy access to cloud services but faces severe DDoS threats. 
+DDoS attacks disrupt IoT services by flooding networks with compromised devices.
+-Motivation :
+IoT Expansion & Vulnerability:IoT expansion requires robust security against evolving DDoS threats
+Critical Data Security:With sensitive data at stake, ML ensures data integrity and user trust.
+Evolving DDoS Threats:Traditional measures fall short, necessitating adaptive machine learning for dynamic threat detection.
 
-- [VirusTotal](https://www.virustotal.com/en/file/fdb74bae02106a08e1afa9ac408b8d97521f9414bbb6af874f6574a75656dfc8/analysis/)
-- [HybridAnalysis](https://www.hybrid-analysis.com/sample/fdb74bae02106a08e1afa9ac408b8d97521f9414bbb6af874f6574a75656dfc8?environmentId=2)
-- RobotHash
+-Data is retrieved from different file formats as follows: 
+• README.md - contains info about captures and associated malwares.
+• .pcap - original file that has network traffic captures 
+• conn.log.labeled - .pcap file is retrieved using Zeek network analyser with proper labelling along with some additional info
 
-[![](https://robohash.org/c76a2520b7454788d127b7e41ae3d9be)](https://robohash.org)
+-AposematIoT-23 
+• A unique dataset capturing IoT network traffic. 
+• 20 malware captures on IoT devices and 3 benign IoT devices. 
+• Real network behaviour for research and machine learning. 
+• Labels provided for analysis, including attack, C&C, DDoS, and more. 
+• A valuable resource for IoT security and malware research.
 
 # Description of Files
 
@@ -46,20 +52,3 @@
     - Argus binary file. Unidirectional flows, 5s of report time.
 - .uninetflow
     - Argus text file with unidirectional flows. Report time 5 secs. TAB as column separator.
-
-# IP Addresses
-    - Infected device: 192.168.100.108
-    - Default GW: 192.168.100.1
-
-# Timeline
-
-## Fri Jul 20 17:43 CEST 2018
-Malware executed.
-
-# Disclaimer 
-These files were generated in the Stratosphere Laboratory as part of the Aposemat Project for collecting IoT malware captures Done in the CVUT University, Prague, Czech Republic.
-The goal is to store long-lived real iot malware traffic and to generate labeled netflows files.
-Any question feel free to contact us at:
-Sebastian Garcia: sebastian.garcia@agents.fel.cvut.cz
-
-You need authorization from the Stratosphere Lab to use these files.
